@@ -1,0 +1,24 @@
+.SingleCatPage a {
+    text-decoration: none;
+    color: #10A19D;
+}
+
+.SingleCatPage-imgHolder {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.SingleCatPage-img {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    /* filter: grayscale(100%); */
+    object-fit: cover;
+}
+
+.SingleCatPage-cardHolder {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: 0.3s;
+    /* cursor: pointer; */
+}

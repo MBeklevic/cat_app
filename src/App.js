@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import CatPage from './components/CatPage';
+import { Route, Routes } from 'react-router-dom';
+import SingleCatPage from './components/SingleCatPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App" >
+        <Routes>
+          <Route exact path='/' element={<CatPage />} />
+          <Route path='/:name' element={<SingleCatPage />} />
+          <Route path="*" element={<CatPage />} />
+        </Routes>
+      </div>
+    );
+  }
 }
 
 export default App;
