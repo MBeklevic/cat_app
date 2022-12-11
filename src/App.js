@@ -10,9 +10,8 @@ class App extends Component {
     return (
       <div className="App" >
         <Routes>
-          <Route exact path='/' element={<CatPage />} />
-          <Route path='/:name' element={<SingleCatPage />} />
-          <Route path="*" element={<CatPage />} />
+          <Route exact path='/cat_app' element={<CatPage />} />
+          <Route path='/cat_app/:name' element={<SingleCatPage />} />
         </Routes>
       </div>
     );

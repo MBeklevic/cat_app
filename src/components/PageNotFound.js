@@ -12,7 +12,7 @@ class PageNotFound extends Component {
         return (
             <div className='PageNotFound container text-center'>
                 <h1><span className='PageNotFound404'>Oppss...404</span> Sayfa Bulunamadı...(</h1>
-                <Link to={"/"}><Button outline={true} className='my-1 col-4'>Anasayfa</Button></Link>
+                <Link to={"/cat_app"}><Button outline={true} className='my-1 col-4'>Anasayfa</Button></Link>
                 <img alt='PageNotFound' className='PageNotFound-img' src={PageNotFoundImg}></img>
 
             </div >
