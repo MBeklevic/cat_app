@@ -21,7 +21,7 @@ function CatNavbar(props) {
     return (
         <div>
             <Navbar {...props}  >
-                <NavbarBrand href="/"><h1 className='me-2 brand ms-4' style={{ color: '#10A19D', display: "inline-block" }}>Cat APP</h1>
+                <NavbarBrand href="/cat_app"><h1 className='me-2 brand ms-4' style={{ color: '#10A19D', display: "inline-block" }}>Cat APP</h1>
                     <FontAwesomeIcon icon={faPaw} size="2x" color='#10A19D' />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
@@ -29,7 +29,7 @@ function CatNavbar(props) {
                     <Nav className="me-auto" navbar>
                         {CatList.map(cat => (
                             <NavItem key={cat.id}>
-                                <NavLink className='brand' style={{ color: '#10A19D' }} href={`/${cat.kind}/`}>{cat.name}</NavLink>
+                                <NavLink className='brand' style={{ color: '#10A19D' }} href={`/cat_app/${cat.kind}/`}>{cat.name}</NavLink>
                             </NavItem>
                         ))}
                     </Nav>
