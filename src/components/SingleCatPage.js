@@ -40,7 +40,7 @@ class SingleCatPage extends Component {
                                                 {currentCat.info}
                                             </CardText>
                                             <hr />
-                                            <Link to={"/"}><Button className='col-6 mx-auto' outline={true} color='primary'>Anasayfa</Button></Link>
+                                            <Link to={"/cat_app"}><Button className='col-6 mx-auto' outline={true} color='primary'>Anasayfa</Button></Link>
                                         </CardBody>
                                     </Card>
                                 </div>
