@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CatList from './CatList';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaw } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -29,7 +30,7 @@ function CatNavbar(props) {
                     <Nav className="me-auto" navbar>
                         {CatList.map(cat => (
                             <NavItem key={cat.id}>
-                                <NavLink className='brand' style={{ color: '#10A19D' }} href={`/cat_app/${cat.kind}/`}>{cat.name}</NavLink>
+                                <Link to={`/cat_app/${cat.kind}/`} onClick={toggle} ><NavLink className='brand' style={{ color: '#10A19D' }}>{cat.name}</NavLink></Link>
                             </NavItem>
                         ))}
                     </Nav>
