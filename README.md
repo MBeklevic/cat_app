@@ -13,6 +13,7 @@
 
 ## Features
 - User can have information about different cat races by visiting the page of each cat.
+- Responsive Design
 
 ## Libraries
 - React
